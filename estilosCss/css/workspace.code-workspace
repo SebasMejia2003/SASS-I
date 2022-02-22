@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\.."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Tareas_coder"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "curso-coder-house"
+	}
+}
