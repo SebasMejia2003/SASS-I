@@ -1,0 +1,347 @@
+/* COMENTARIO DE ESTRUCTURA */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../estiloLetras/Roboto/Roboto-Regular.ttf");
+}
+@font-face{
+    font-family: montserrat;
+    src: url("../estiloLetras/Montserrat/static/Montserrat-Medium.ttf")
+}
+/* ESTILOS GENERALES */
+header{
+    border-bottom: 2.5px solid #f61e1e ;
+    font-family: Roboto;
+    font-weight: 600;
+}
+span:hover{
+    color: black;
+    background-image: linear-gradient(to bottom right, white, red);
+}
+.logo{
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img_logo{
+    height: 3em;
+}
+        /* MAIN ESTILOS GENERALES */
+main{
+    font-family: Roboto;
+}
+.titulo_TD{
+    font-weight: bold;
+}
+.boton:hover{
+    background-color: #BB3F3F;
+}
+nav a{
+    color: black;
+}
+.titulo_inicio{
+    text-align: center;
+    color: #f61e1e;
+    font-weight: bold;
+    margin: .2em;
+}
+.boton:hover{
+    background-color: #BB3F3F;
+}
+.form{
+    background-color: whitesmoke;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 1em;
+    padding-top: 3.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 10.5em;
+}
+.form_container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.form_title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+.form_input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: .2em;
+}
+.form_input--message{
+    resize: none;
+    padding-top: 1.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1.8em;
+    margin-bottom: .5em;
+}
+.form_cta{
+    font-family: inherit;
+    background-color: #089FE0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+#form_contacto{
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    min-height: 80vh;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: .5em;
+}
+footer p{
+        text-align: center;
+}
+/* SMARTPHONE */
+@media (max-width:530px){
+    .img_logo {
+        height: 2.5em;
+        margin: .2em;
+        justify-content: center;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+                                /* menú */
+    /* .ul_navbar{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: .5em;
+        background-color: whitesmoke;
+        padding: .2em;
+        border-radius: .5em;
+        text-align: center;
+        
+    }
+    nav{
+        margin-left: 4%;
+    } */
+    .container_txtBienvenida{
+        display:flex;
+        justify-content: center;
+        text-align: justify; 
+        width: 100%;
+    }
+    .txt_Bienvenida{
+        text-align: justify;
+        width: 80%;
+    }
+    .boton_agendarCita{
+        display:flex;
+        justify-content: center;
+        text-align: center; 
+        width: 100%;
+    }
+    .agendarCita{
+        width: 100%;
+        background-color: #f61e1e;
+        padding: .5em;
+        color: white;
+        text-decoration: none;
+        border-radius: .3em;
+        margin-top: .5em;
+    }
+    .lista_tratamientos_dentales{
+        font-size: 14px;
+        list-style-type: disc;
+        margin-left: 1.2em;
+        text-decoration: underline 2px #EB3737;
+    }
+    .tratamientos_dentales_hijo{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .txt_servicios{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .row{
+        margin: 0em .5em;
+        text-align: center;
+    }
+    article{
+        background-color: grey;
+        margin: .4em .3em;
+        border-radius: .5em;
+    }
+    h3{
+        background-color:#EB3737;
+        border-radius: .5em;
+    }
+}
+/* TABLET */
+@media (min-width: 531px) and (max-width:1024px){
+    /* HEADER */
+    header{
+        font-family: Roboto;
+        font-weight: bold;
+        border-bottom: 2.5px solid #f61e1e ;
+    }
+    .logo{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .img_logo{
+        height: 2.5em;
+        margin-top: .2em;
+    }
+    /* MAIN */
+    .container_txtBienvenida{
+        display:flex;
+        justify-content: center;
+        text-align: justify; 
+        width: 100%;
+    }
+    .txt_Bienvenida{
+        text-align: justify;
+        width: 80%;
+    }
+    .boton_agendarCita{
+        display:flex;
+        justify-content: center;
+        text-align: center; 
+        width: 100%;
+    }
+    .agendarCita{
+        width: 100%;
+        background-color: #f61e1e;
+        padding: .5em;
+        color: white;
+        text-decoration: none;
+        border-radius: .3em;
+        margin-top: .5em;
+    }
+    .lista_tratamientos_dentales{
+        font-size: 14px;
+        list-style-type: disc;
+        margin-left: 1.2em;
+        text-decoration: underline 2px #EB3737;
+    }
+    .tratamientos_dentales_hijo{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    article{
+        background-color: grey;
+        margin: .4em .3em;
+        border-radius: .5em;
+    }
+    h3{
+        background-color:#EB3737;
+        border-radius: .5em;
+    }
+    .txt_servicios{
+        font-size: 16px;
+        text-align: justify;
+    }
+    .row{
+        margin: 0em .5em;
+        text-align: center;
+    }
+}
+/* DESKTOP */
+@media (min-width: 1025px){
+    header{
+        font-family: Roboto;
+        font-weight: bold;
+        border-bottom: 2.5px solid #f61e1e ;
+    }
+    .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .img_logo{
+        height: 2.5em;
+        margin-top: .2em;
+    }
+    .navbar-nav a{
+        color: red;
+    }
+
+    /* MAIN */
+    .container_txtBienvenida{
+        display:flex;
+        justify-content: center;
+        text-align: justify; 
+        width: 100%;
+    }
+    .txt_Bienvenida{
+        text-align: justify;
+        width: 80%;
+    }
+    .boton_agendarCita{
+        display:flex;
+        justify-content: center;
+        text-align: center; 
+        width: 100%;
+    }
+    .agendarCita{
+        width: 100%;
+        background-color: #f61e1e;
+        padding: .5em;
+        color: white;
+        text-decoration: none;
+        border-radius: .3em;
+        margin-top: .5em;
+    }
+    .lista_tratamientos_dentales{
+        font-size: 14px;
+        list-style-type: disc;
+        margin-left: 1.2em;
+        text-decoration: underline 2px #EB3737;
+    }
+    .tratamientos_dentales_hijo{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .txt_servicios{
+        font-size: 12px;
+        text-align: justify;
+    }
+    .row{
+        margin: 0em .5em;
+        text-align: center;
+    }
+    article{
+        background-color: grey;
+        margin: .4em .3em;
+        border-radius: .5em;
+    }
+    h3{
+        background-color:#EB3737;
+        border-radius: .5em;
+    }
+}
